@@ -5,8 +5,8 @@
     "version": "0.0.1",
     "npmClient": "npm",
     "command": {
-        "version": {
-            "push": false
+        "publish": {
+            "message": "(release) Publish %s"
         }
     }
 }

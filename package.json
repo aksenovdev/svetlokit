@@ -4,7 +4,7 @@
     "scripts": {
         "bootstrap": "lerna bootstrap",
         "build": "lerna run build",
-        "publish-release": "lerna publish --yes -m \"chore: Publish %s\""
+        "publish-release": "lerna publish from-package --yes"
     },
     "devDependencies": {
         "@changesets/cli": "^2.13.0",
