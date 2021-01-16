@@ -1,0 +1,20 @@
+{
+    "name": "@svetlokit/stores",
+    "version": "0.0.1",
+    "description": "> TODO: description",
+    "author": "Sergei Aksenov <aksenovdev@gmail.com>",
+    "homepage": "",
+    "license": "ISC",
+    "types": "lib/index.d.ts",
+    "main": "lib/index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublish": "tsc"
+    }
+}
