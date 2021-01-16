@@ -5,7 +5,7 @@
     "scripts": {
         "bootstrap": "lerna bootstrap",
         "build": "lerna run build",
-        "publish-release": "lerna publish -m \"chore: Publish %s\" --no-push"
+        "publish-release": "lerna publish --no-push --yes -m \"chore: Publish %s\""
     },
     "devDependencies": {
         "@tsconfig/svelte": "^1.0.10",
