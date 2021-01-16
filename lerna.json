@@ -8,8 +8,5 @@
         "version": {
             "push": false
         }
-    },
-    "publishConfig": {
-        "access": "public"
     }
 }
