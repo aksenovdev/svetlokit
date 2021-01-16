@@ -1,6 +1,6 @@
 {
     "name": "@svetlokit/components",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "> TODO: description",
     "author": "Sergei Aksenov <aksenovdev@gmail.com>",
     "homepage": "",
@@ -13,8 +13,7 @@
         "sass": "^1.30.0"
     },
     "dependencies": {
-        "@svetlokit/actions": "*",
-        "@svetlokit/stores": "*"
-
+        "@svetlokit/actions": "^0.0.1",
+        "@svetlokit/stores": "^0.0.1"
     }
 }
