@@ -9,7 +9,7 @@
         : undefined;
 </script>
 
-<style>
+<style lang="scss">
     .backdrop {
         position: absolute;
         top: 0;
