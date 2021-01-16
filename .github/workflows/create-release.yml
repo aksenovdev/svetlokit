@@ -16,7 +16,8 @@ jobs:
       - run: npm ci
       - run: npm run bootstrap
   create-release-pr:
-    name: Create release request
+    name: Create release PR
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -34,3 +35,17 @@ jobs:
         uses: changesets/action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  publish-to-npm:
+    needs: create-release-pr
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+      - run: npm run ci
+      - run: npm run bootstrap
+      - run: npm run publish-release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
