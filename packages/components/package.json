@@ -1,0 +1,14 @@
+{
+    "name": "@svetlokit/components",
+    "version": "0.0.1",
+    "description": "> TODO: description",
+    "author": "Sergei Aksenov <aksenovdev@gmail.com>",
+    "homepage": "",
+    "license": "ISC",
+    "dependencies": {
+        "@svetlokit/actions": "*",
+        "@svetlokit/stores": "*",
+        "node-sass": "^5.0.0",
+        "sass": "^1.30.0"
+    }
+}
