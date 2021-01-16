@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -36,6 +37,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   publish-to-npm:
+    name: Publish to NPM
     needs: create-release-pr
     runs-on: ubuntu-latest
     steps:
@@ -44,7 +46,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: npm run ci
+      - run: npm ci
       - run: npm run bootstrap
       - run: npm run publish-release
         env:
