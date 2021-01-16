@@ -1,0 +1,12 @@
+{
+  "name": "svetlokit",
+  "version": "0.0.1",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "publish-release": "lerna publish -m \"chore: Publish %s\" --no-push"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
