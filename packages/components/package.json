@@ -8,10 +8,13 @@
     "publishConfig": {
         "access": "public"
     },
-    "dependencies": {
-        "@svetlokit/actions": "*",
-        "@svetlokit/stores": "*",
+    "devDependencies": {
         "node-sass": "^5.0.0",
         "sass": "^1.30.0"
+    },
+    "dependencies": {
+        "@svetlokit/actions": "*",
+        "@svetlokit/stores": "*"
+
     }
 }
