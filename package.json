@@ -1,13 +1,13 @@
 {
     "name": "svetlokit",
-    "version": "0.0.0",
     "private": true,
     "scripts": {
         "bootstrap": "lerna bootstrap",
         "build": "lerna run build",
-        "publish-release": "lerna publish --no-push --yes -m \"chore: Publish %s\""
+        "publish-release": "lerna publish --yes -m \"chore: Publish %s\""
     },
     "devDependencies": {
+        "@changesets/cli": "^2.13.0",
         "@tsconfig/svelte": "^1.0.10",
         "lerna": "^3.22.1",
         "svelte": "^3.31.2",
