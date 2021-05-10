@@ -33,7 +33,7 @@ export const hasAbsolutePosition: SvelteAction<HTMLElement>
                 targetEl.appendChild(element);
 
                 return () => {
-                    if (element) {
+                    if (element && targetEl.contains(element)) {
                         targetEl.removeChild(element);
                     }
                     resetTarget();
