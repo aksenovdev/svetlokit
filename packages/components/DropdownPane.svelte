@@ -20,6 +20,7 @@
     let hovered: boolean = false;
 
     $: dispatcher('hover', hovered);
+    $: isOpen$.set(opened);
     $: isOpened = $isOpen$ || (stayOpenWhileHovered && hovered);
 </script>
 
